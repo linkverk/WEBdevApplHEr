@@ -1,0 +1,87 @@
+.logged-in-page {
+  padding: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  font-family: var(--font-family, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial);
+  color: var(--text-color, #222);
+}
+
+.li-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.li-title {
+  font-size: 28px;
+  margin: 0 0 6px 0;
+}
+
+.li-username {
+  color: var(--accent-color, #e76f51);
+}
+
+.li-sub {
+  margin: 0;
+  color: #555;
+}
+
+.li-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.li-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.li-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.li-card:hover,
+.li-card:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.li-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.li-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.li-quick {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.li-logout {
+  background: transparent;
+  border: 1px solid var(--accent-color, #e76f51);
+  color: var(--accent-color, #e76f51);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.li-logout:hover {
+  background: rgba(231,111,81,0.06);
+}
+
+@media (max-width: 520px) {
+  .li-title { font-size: 20px; }
+  .li-main { gap: 12px; }
+}
