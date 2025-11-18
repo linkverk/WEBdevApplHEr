@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using BioscoopServer.models;
 
-namespace BioscoopServer.Services
+namespace BioscoopServer.DBServices
 {
     public class JwtService
     {
