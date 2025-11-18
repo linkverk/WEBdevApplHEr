@@ -10,7 +10,7 @@ using BioscoopServer.DBServices;
 var builder = WebApplication.CreateBuilder(args);
 
 // JWT Configuration
-var jwtSecretKey = "YourSuperSecretKeyThatIsAtLeast32CharactersLong!@#$%";
+var jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET");
 var jwtIssuer = "BioscoopServer";
 var jwtAudience = "BioscoopClient";
 

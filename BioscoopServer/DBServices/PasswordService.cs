@@ -2,7 +2,7 @@ using System;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace BioscoopServer.Services
+namespace BioscoopServer.DBServices
 {
     public class PasswordService
     {
